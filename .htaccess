@@ -1,0 +1,5 @@
+ErrorDocument 404 /404.php
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+#RedirectMatch 301 http://d.websupport.sk/dactylos.sk/index.php http://d.websupport.sk/dactylos.sk/
